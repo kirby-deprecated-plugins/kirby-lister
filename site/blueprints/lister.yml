@@ -1,0 +1,12 @@
+title: Lister Example
+pages: true
+files: true
+fields:
+
+  title:
+    label: Title
+    type:  text
+
+  lister_example:
+    label: Choose your file...
+    type: lister

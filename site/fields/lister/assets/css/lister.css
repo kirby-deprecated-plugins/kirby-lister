@@ -1,0 +1,184 @@
+select.lister,
+.lister_value {
+  display: none;
+}
+
+/* Selected button */
+
+.lister_loader,
+span.selectboxit.lister.selectboxit-enabled.selectboxit-btn {
+  border: 2px solid #ddd;
+  width: 100%;
+  padding: .6em;
+  background: #fff;
+  color: #999;
+  border-radius: 0;
+  min-height: 42px;
+  max-height: 42px;
+}
+
+span.selectboxit.lister.selectboxit-enabled.selectboxit-btn.selectboxit-focus {
+  border-color: #8dae28;
+}
+
+span.selectboxit.lister.selectboxit-enabled.selectboxit-btn.selectboxit-focus .selectboxit-arrow-container {
+  border-left: 1px solid #8dae28;
+}
+
+.lister_loader {
+  cursor: wait;
+  padding-top: .5em !important;
+  text-indent: 2.1em;
+  background-size: auto 75%;
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-position: left 6px center;
+  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAMAAABHPGVmAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAPxQTFRFNzc3////Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3bYR7kAAAAFN0Uk5TAAADBgkMDxIVGBseISQnKi0wMzY5PD9CRUhLTlFUV1pdYGNmbG9ydXh7foGEh4qNkJOWmZyfoqWorrG0t7q9wMPGyczP0tjb3uHk5+rt8PP2+fy4q8e8AAADKklEQVRo3u3Z2ULaQBSA4SlhDUJpRFFUQNO64opWrUuoWzWAEP73f5deDGJVxJkRtBc5lxDykUlm5pwT8eUDQoRIiIRIiITI24gYaRgjcWfWdd2CMzEmJDa/5XXoR+d8cy46WsSqnHV5EcFJJToyJFVt8krc702MBMkedRkS3YOJdyPRjaB/vruaO+OkhUg50+5Ovf95pxrVQdIAuX+PLPzpj/9y5hlfrLV6X97m34FE93tnaawlB15m+bI3ZhsRUyR9JU/R+vH6QzR7LY85jZkh3xry90fxYdMhsipnz7Vtgkzdy4e0/NbUzpzLG5PWRyal4dkKK8iqVJK6SEbOv1pEaTFcDAA8Sw+J3wCwobrkzrQBdvWQYwC21Bd2pwOwpIO4cqx0to8SQJBXR9JtgLqltUlVAS7VkROAZlJzK/wFUFZFCgDM6+63iQbgxxSRS4BD/V29BLCphswAtG2D3MEDgpQScvrkD+nEFMCaClIEaCdNEOEBjYgCcvRi7qrHHEBRAekAZM2QiP84h4ciz+aUXuwAvxWRVVNk8njJFopIboy58APiiw9ABkQ6RD4H+T8qrRB5DzL0QQmRT0EGhP8BSE71Suyl40lTZEURqQM7psiFIrIP+BEzI9vPRN5AigBz5nkEPxUQqwGcGxmJNtAtqtz4dYC8CVIF+JVTQVIB4BkYdhtgSgkRmwAlfeQQwBNqSMwH/ISuMY8cZzVElAGONY1ko1c7KSKRK60iXj6UHkArpYyIfACwoIPs8VCXqiKykO846sY6AAdCBxE1gHZBz7iK6iFWHSCoqNU+cqx8W+ghIukrVyr2mWzw5YQuIibuADh7s2W+IDtjTUfoIyIt21GdlaHrfvywV9N8FSaIiJ/K319Nvz47vvfathe2MENEpNrb5y5KAztGybWHvGHPEqaIENO3vbO0dmefOZnlk4cm983Uk26x4ziOpZOtxDYf2+Xetpt34kIknYJbu3t8y7FuvTsXzhwy9IXAUXYkCXe21n6NaFZTI8vqY4unwYCLOKtYY33dFNS35+PjqU8STsl1XXfBUehUfWalFb6WDZEQCZEQ+WjkL/vSjtccUViuAAAAAElFTkSuQmCC');
+}
+
+.lister_loader.lister_empty {
+  cursor: default;
+  background: #f6f6f6;
+  color: #888;
+  font-style: italic;
+  text-indent: 0;
+  border-color: #ddd;
+}
+
+span.selectboxit.lister.selectboxit-enabled.selectboxit-btn {
+  padding: 0;
+}
+
+/* Selected image */
+
+.selectboxit-container .selectboxit-option-icon {
+  background-color: #eee;
+}
+
+.selectboxit-option-first span.selectboxit-option-icon-container,
+span.selectboxit-option-icon-container {
+  background-color: #ccc;
+  background-size: 75% auto;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAdZJREFUeNrs3MFKAkEYwHHXIuidgiAIuvUQdRN6nyAIgiAIAkEI6thDddx2Qeumn+6szjS/Pwwe+9xf6w662rRtO4nUNM1E2xc9vqumu/yNwtZXt05LAZxW8E961q2PUlCmlbxy9CjvJaDUAtJ3XgJKTSArlEXOKLWB9F10a54rSrPDtrdNsb0b7QnFt+ef3bru1nfp297/0mW33nI7U2oG6btaopwAyQtlngtKNSB3s1kZZ0p/0YmsTW+d5NK6+TqUTW+zLFKjRI/v73GuCeQQKEAC8wVQkl1TgATnC6AkuaYA2WK+faAA2XK+AMrrEBQgO8wXRDkCsieQMVGADJgvgPKyLQqQgfOlRgGSYL4AynMUBUii+QIoTxEUIAnnS4ECJPF8AZTHdShARphvCAqQkeYLogDZF8iuKEBGni+A8jAE5LiWj3D3ePf+zfLx1mfq+dSj3LtRbpLd91ia1o1yZQcEiNb173ZZh7iWpbxuOUO8ZAkIEAEBIiBABASIgAgIEAEBIiBABASIgAgIEAEBIiBABASIgAgIEAEBIiBABASIgAgIEAEBIiBABASIgAgIEAEBIiBABASIgOivZD+knNmP4DtDBASIgABRebss26kR+xFgADhksch2UCIaAAAAAElFTkSuQmCC');
+}
+
+span.selectboxit-option-icon-container {
+  width: 32px;
+  line-height: 32px;
+  padding: 0;
+  margin: 4px 4px 0 1px;
+}
+
+.selectboxit-btn span.selectboxit-option-icon-container {
+  margin-left: 4px;
+}
+
+.selectboxit-option-icon-url {
+  width: 100%;
+  background-size: 100% auto;
+  background-size: cover;
+}
+
+/* Selected text-label */
+
+span.selectboxit-text {
+  line-height: 30px !important;
+  color: #444;
+  font-size: 15px;
+  margin: .3em 0 0 0;
+  width: 75%;
+}
+
+.selectboxit-selected a.selectboxit-option-anchor {
+  color: #dfeabf;
+}
+
+/* Nothing selected */
+
+.selectboxit-option-first .selectboxit-option-anchor {
+  color: #888;
+}
+
+.selectboxit-option-first span.selectboxit-option-icon-container {
+  border: 1px solid #fff;
+}
+
+/* Pulldown */
+
+ul.selectboxit-options.selectboxit-list,
+span.selectboxit-container.selectboxit-container,
+span.selectboxit.lister.selectboxit-enabled.selectboxit-btn {
+  width: 100% !important;
+}
+
+ul.selectboxit-options.selectboxit-list {
+  min-width: 0 !important;
+}
+
+.selectboxit-container .selectboxit-options {
+  border-radius: 0;
+  margin: -2px 0 0 0 !important;
+  border: 2px solid #8dae28;
+  max-height: 240px;
+}
+
+.selectboxit-list > .selectboxit-focus > .selectboxit-option-anchor,
+.selectboxit-selected {
+  background: #8dae28;
+  min-height: 38px;
+}
+
+.selectboxit-option {
+  clear: both;
+  min-height: 38px !important;
+}
+
+.selectboxit-container span, .selectboxit-container .selectboxit-options a {
+  line-height: 38px;
+}
+
+.selectboxit-option-first,
+.selectboxit-option-last {
+  border-radius: 0;
+}
+
+.selectboxit-option:not(.no-preview):hover a {
+  margin-left: 25px;
+}
+
+.selectboxit-option:hover a {
+  background: #444 !important;
+}
+
+.selectboxit-option:not(.no-preview):hover .selectboxit-option-icon {
+  -webkit-transform: scale(2);
+  transform: scale(2);
+  -webkit-transform-origin: 0 center;
+  transform-origin: 0 center;
+  border: 1px solid #fff;
+  border-left-width: 2px;
+  margin-left: -29px;
+  box-shadow: 0 0 8px rgba(255, 255, 255, .5);
+}
+
+.selectboxit-option.selectboxit-option-last:hover .selectboxit-option-icon {
+  -webkit-transform-origin: 0 26px;
+  transform-origin: 0 26px;
+}
+
+/* Pulldown arrow */
+
+.selectboxit-arrow-container {
+  border-left: 1px solid #ddd;
+  height: 100% !important;
+  width: 40px;
+  background: #fff;
+}
+
+.selectboxit-default-arrow {
+  border-top: 5px solid #666;
+  border-right: 5px solid transparent;
+  border-left: 5px solid transparent;
+}
